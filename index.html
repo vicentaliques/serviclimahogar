@@ -37,6 +37,12 @@
         padding-bottom: 30px;
 
       }
+      
+      #form1{
+        background-color: #ffe9d6;
+        padding: 5%;
+      }
+
 
       .cambioseccion1{
         background-color: #f4aa67;
@@ -73,25 +79,70 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Aviso</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Nosotros</a>
           </li>
 
         </ul>
 
       </nav>
 
+<!--Formulario inline-->
 
+<div class="container" style="padding: 2% 0 2% 0">
+<form class="form-inline">
+
+  <div class="form-group">
+         <label class="sr-only" for="exampleSelect1">Tipo de Aparato</label>
+          <select class="form-control form-control-lg" id="exampleSelect1" placeholder="Elige Aparato">
+              <option>Tipo de Aparato</option>
+              <option>Aire Acondicionado</option>
+              <option>Lavadora</option>
+              <option>Lavavajillas</option>
+              <option>Microondas</option>
+              <option>Horno</option>
+              <option>Vitrocerámica</option>
+              <option>Frigorífico</option>
+              <option>Calentador</option>
+              <option>Otro Electrodoméstico</option>
+          </select>
+
+   </div>
+    <div class="form-group">
+        <label class="sr-only" for="exampleSelect2">Marca</label>
+        <select class="form-control form-control-lg" id="exampleSelect2" placeholder="Elige Marca">
+              <option>Elige Marca</option>
+              <option>Mitsubishi Electric</option>
+              <option>Mitsubishi Heavy Industries</option>
+              <option>Hisense</option>
+              <option>Whirlpool</option>
+              <option>LG</option>
+              <option>Daikin</option>
+              <option>Carrier</option>
+              <option>Hitecsa</option>
+              <option>Ciat</option>
+              <option>Otra Marca</option>
+         </select>
+   </div>
+
+   <div class="form-group">
+          <label class="sr-only" for="example-text-input">Nombre</label>
+          <input class="form-control form-control-lg" type="text" placeholder="Escribe tu Nombre" id="example-text-input">
+   </div>
+
+
+  <button type="submit" class="btn btn-success">Dar Aviso</button>
+</form>
+
+</div>
 
    <!--Carrusel-->
 
-  <div class="row ">
-     <div class="col-md-8">
 
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -138,63 +189,8 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-    
-    </div>
 
-    <div class="col-md-4">
-
-<!--formulario de busqueda-->
-      <div class="container">
-      <form>
-
-        <div class="form-group">
-          <label for="exampleSelect1">Tipo de Aparato</label>
-              <select class="form-control" id="exampleSelect1" placeholder="Elige Aparato">
-              <option>Aire Acondicionado</option>
-              <option>Lavadora</option>
-              <option>Lavavajillas</option>
-              <option>Microondas</option>
-              <option>Horno</option>
-              <option>Vitrocerámica</option>
-              <option>Frigorífico</option>
-              <option>Calentador</option>
-              <option>Otro Electrodoméstico</option>
-            </select>
-
-         </div>
-
-
-        <div class="form-group">
-          <label for="exampleSelect2">Marca</label>
-              <select class="form-control" id="exampleSelect2" placeholder="Elige Marca">
-              <option>Mitsubishi Electric</option>
-              <option>Mitsubishi Heavy Industries</option>
-              <option>Hisense</option>
-              <option>Whirlpool</option>
-              <option>LG</option>
-              <option>Daikin</option>
-              <option>Carrier</option>
-              <option>Hitecsa</option>
-              <option>Ciat</option>
-              <option>Otra Marca</option>
-            </select>
-         </div>
-
-        <div class="form-group">
-          <label for="example-text-input">Nombre</label>
-            <input class="form-control" type="text" placeholder="Escribe tu Nombre" id="example-text-input">
-        </div>
-        
-        <button type="submit" class="btn btn-primary">Dar Aviso</button>
-
-      </form>
-
-      </div>
-
-
-    </div>
-
-  </div> 
+ 
 
 
 <!--LOGOTIPOS-->
@@ -368,6 +364,7 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
 
   </body>
 </html>
