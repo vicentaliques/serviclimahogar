@@ -1,68 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
   <head>
-    
     <meta charset="utf-8">
-    <title>Serviclima Hogar</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
     <link rel="icon" href="img/favicon.ico">
-    <style type="text/css">
 
-       #nTelefono{
-        color: #f07f1b;
-        padding-top: 30px;
-        padding-left: 25%;
-        font-size: 2em;
-        font-weight: 700;
-       }
+    <title>Serviclima Hogar</title>
 
-      .nav{
-        padding-top: 30px;
-        float: right;
-      }
-      
-      /*.carousel-caption{
-        border: solid 1px;
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-      }*/
-
-      .container img
-      {
-        padding-top: 30px;
-        padding-bottom: 30px;
-
-      }
-      
-      #form1{
-        background-color: #ffe9d6;
-        padding: 5%;
-      }
-
-
-      .cambioseccion1{
-        background-color: #f4aa67;
-      }
-
-      #footer1{
-        padding-top: 100px;
-        padding-bottom: 50px;
-        background-color: #ef7f1b; 
-        color: white;
-      }
-
-
-
-
-
-    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
   </head>
-  
-
   <body>
 
   <!--Barra de navegación-->
@@ -94,9 +48,12 @@
 
 <!--Formulario inline-->
 
-<div class="container" style="padding: 2% 0 2% 0">
-<form class="form-inline">
+<div class="container" style="border: hidden;">
+<form class="form-control">
 
+<div class="row">
+
+<div class="col-lg-3">
   <div class="form-group">
          <label class="sr-only" for="exampleSelect1">Tipo de Aparato</label>
           <select class="form-control form-control-lg" id="exampleSelect1" placeholder="Elige Aparato">
@@ -111,8 +68,10 @@
               <option>Calentador</option>
               <option>Otro Electrodoméstico</option>
           </select>
+  </div>
+</div>
 
-   </div>
+<div class="col-lg-3">
     <div class="form-group">
         <label class="sr-only" for="exampleSelect2">Marca</label>
         <select class="form-control form-control-lg" id="exampleSelect2" placeholder="Elige Marca">
@@ -129,96 +88,131 @@
               <option>Otra Marca</option>
          </select>
    </div>
+</div>
 
+<div class="col-lg-3">
    <div class="form-group">
           <label class="sr-only" for="example-text-input">Nombre</label>
           <input class="form-control form-control-lg" type="text" placeholder="Escribe tu Nombre" id="example-text-input">
    </div>
+</div>
 
+<div class="col-lg-3" >
+  <button type="submit" class="btn btn-warning" style="text-align: center">Dar Aviso</button>
+</div>
 
-  <button type="submit" class="btn btn-warning">Dar Aviso</button>
+</div>
 </form>
 
 </div>
 
-   <!--Carrusel-->
 
-
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item">
-              <img src="img/Lavadora.jpg" alt="First slide">
-              <div class="carousel-caption">
-                <h3>Servicio Técnico Oficial</h3>
-                <p>Nuestra experiencia a tu servicio</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="img/Microondas.jpg" alt="Second slide">
-              <div class="carousel-caption">
-                  <h3>...</h3>
-                  <p>...</p>
-                  
-              </div>
-            </div>
-            <div class="carousel-item active">
-              <img src="img/Ventilador.jpg" alt="Third slide">
-              <div class="carousel-caption">
-                  <h3>Servicio Técnico Oficial</h3>
-                  <p>Nuestra experiencia a tu servicio</p>
-                  <ul class="list-unstyled">
-                    <li>Mitsubishi Electric</li>
-                    <li>Mitsubishi Heavy Industries</li>
-                    <li>Whirlpool</li>
-                    <li>Hisense</li>
-                  </ul>
-              </div>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item">
+          <img class="first-slide" src="img/Lavadora.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption text-xs-left">
+              <h1>Example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
           </div>
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="icon-prev" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="icon-next" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
-
- 
-
+        <div class="carousel-item">
+          <img class="second-slide" src="img/Microondas.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img class="third-slide" src="img/Ventilador.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption text-xs-right">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
 
 <!--LOGOTIPOS-->
+
+<div class="container p-y">
+
 <div class="container-fluid">
 
 
 <div class="block app-ribbon p-y-lg">
-  <div class="container text-center">
-    <a href="#ME"><img class="mx-auto" src="img/logoME150.png"></a>
-    <a href="#"><img class="mx-auto" src="img/logoMHI150.png"></a>
-    <a href="#"><img class="mx-auto" src="img/logoindesit150.png"></a>
-    <a href="#"><img class="mx-auto" src="img/logowhirlpool150.png"></a>
-    <a href="#"><img class="mx-auto" src="img/logoteka150.png"></a>
-    <a href="#"><img class="mx-auto" src="img/logobalay150.png"></a>
-    <a href="#"><img class="mx-auto" src="img/logodaikin150.jpg"></a>
+  <div class="row">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoME150.png"></a></div>
+  <div class="col-lg-1"></div>
+    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoMHI150.png"></a></div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoindesit150.png"></a></div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logowhirlpool150.png"></a></div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoteka150.png"></a></div>
+    <div class="col-lg-1"></div>
+</div>
+</div>
+
+<div class="container-fluid">
 
 
-
-  </div>
-</div> 
+<div class="block app-ribbon p-y-lg">
+  <div class="row">
+  <div class="col-lg-1"></div>
+  <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoME150.png"></a></div>
+  <div class="col-lg-1"></div>
+    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoMHI150.png"></a></div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoindesit150.png"></a></div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logobalay150.png"></a></div>
+    <div class="col-lg-1"></div>
+    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logodaikin150.jpg"></a></div>
+  <div class="col-lg-1"></div>
+    
+</div>
+</div>
 
 </div>
+
+</div>
+
+</div>
+
 
 
 <!--Empresa-->
 
 
-<div class="jumbotron jumbotron-light" style="background-color: #f6e1cd">
+<div class="jumbotron jumbotron-light" style="background-color: #f6e1cd; margin-top: 5%">
   <!--<hr class="my-2">-->
   <h1 class="display-3">Empresa de Servicios</h1>
   <p class="lead">Nos dedicamos a la reparaciónde electrodomésticos y equipos de aire acondicionado desde hace más de 25 años.</p>
@@ -238,7 +232,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title btn btn-success" id="myModalLabel">Empresa de Reparación de Electrodomésticos</h4>
+            <h4 class="modal-title btn btn-success" id="myModalLabel">Reparación de Electrodomésticos</h4>
           </div>
           <div class="modal-body">
             <p>ServiClima, servicio de climatización, s.l. somos una empresa que venimos desarrollando nuestra labor como SAT y servicio de reparación, desde 1984 como serviblanc y desde 1995 como serviClima, por tanto, conocemos bien lo que las marcas nos requieren, ya que independiente de la rapidez en la asistencia, también necesitan estar completamente informadas del estado de la intervención, además todo ello aderezado con una gestión ofimática eficaz.</p>
@@ -255,63 +249,84 @@
   </p>
 </div>
 
-<!--nuestros fortalezas-->
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<div class="container text-center" style="padding-bottom: 100px">
-<div class="row app-marketing-grid">
-      <div class="col-sm-4 p-x-md m-b-lg">
-        <img class="m-b mx-auto d-block" src="img/assets/tiempo.png">
-        <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
+    <div class="container marketing" style="padding-top: 5%">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/assets/tiempo.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/assets/presupuesto.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/assets/sinpapel.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
       </div>
-      <div class="col-sm-4 p-x-md m-b-lg">
-        <img class="m-b mx-auto d-block" src="img/assets/presupuesto.png">
-        <p><strong>E-commerce.</strong> We automatically handle all sales analytics.</p>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 push-md-5">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 pull-md-7">
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
       </div>
-      <div class="col-sm-4 p-x-md m-b-lg">
-        <img class="m-b mx-auto d-block" src="img/assets/sinpapel.png">
-        <p><strong>Turnaround.</strong> Our data analysis is distributed, so it processes in seconds.</p>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
       </div>
-    </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
 </div>
 
-
-<!--reparación electrodomésticos-->
-
-<div class="container">
-<div class="jumbotron jumbotron-fluid" style="background-color: #fff">
-  <div class="row">
-    <div class="col-md-6">
-      <h1 class="display-3">Reparación de Electrodomésticos</h1>
-      <p class="lead">Prestamos los servicios de reparación de electrodomésticos como Lavadoras, Lavavajillas, Hornos, Microondas, Frigoríficos, Encimeras, etc...</p>
-    </div>
-    <div class="col-md-6">
-      <img src="img/mapsserviclimaxativa.png" class="img-thumbnail" alt="serviclima reparación de electrodomésticos">
-    </div>
-  </div>
-</div>
-</div>
-
-
-<!--reparación aire acondicionado-->
-
-<div class="container">
-<div class="jumbotron jumbotron-fluid" style="background-color: #fff">
-  <div class="row">
-    <div class="col-md-6">
-      <img src="img/mapsserviclimaxativa.png" class="img-thumbnail" alt="serviclima reparación de aire acondicionado">
-    </div>
-    <div class="col-md-6">
-      <h1 class="display-3">Reparación de Aire Acondicionado</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-    </div>
-
-  </div>
-</div>
-</div>
-
-
-
-<!--footer-->
 
 <div class="block block-inverse app-footer" id="footer1">
  <div class="container">
@@ -354,22 +369,19 @@
     </div>
   </div>
 </div>
+<!-- /.container -->
 
 
-
-
-
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.1.1.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
+    <script src="/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
-
-
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-
-
-
-
-
