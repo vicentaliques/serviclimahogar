@@ -30,6 +30,11 @@ body {
         color: white;
       }
 
+      #form1
+      {
+        margin-bottom: 50px;
+      }
+
 
 /* Carousel base class */
 .carousel {
