@@ -38,7 +38,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Blog</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" >
             <a class="nav-link" href="#">Nosotros</a>
           </li>
 
@@ -46,10 +46,11 @@
 
       </nav>
 
+<div class="container-fluid cambiopagina">
 <!--Formulario inline-->
 
-<div class="container" style="border: hidden;">
-<form class="form-control">
+<div class="container" >
+<form class="form-control" style="border: hidden">
 
 <div class="row">
 
@@ -98,7 +99,7 @@
 </div>
 
 <div class="col-lg-3" >
-  <button type="submit" class="btn btn-warning" style="text-align: center">Dar Aviso</button>
+  <button type="submit" class="btn btn-warning" id="bt1" style="text-align: center">Dar Aviso</button>
 </div>
 
 </div>
@@ -339,6 +340,58 @@
       <!-- /END THE FEATURETTES -->
 
 
+</div>
+
+
+<!--pagina 2-->
+
+<div class="container ocultada" id="nuevapagina">
+
+<div class="container">
+  
+<h1>Gracias por Contactar</h1><br>
+<h4>Por favor cumplimenta los campos que quedan para que te podamos ayudar</h4><br>
+
+
+</div>
+
+
+
+<!--Formulario -->
+<div class="container">
+
+<form action="contacto.php" id="form1" name="form1" method="post">
+  <div id="close_form"></div>
+  
+  <div class="form-group">
+    <label for="nombre">Modelo:</label>
+    <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Introduce el modelo (no es imprescindible)">
+  </div>
+
+
+
+  <div class="form-group">
+    <label for="email1">Dirección de email:</label>
+    <input type="email" class="form-control" id="email1" name="email1" aria-describedby="emailHelp" placeholder="Introduce tu email">
+    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu email</small>
+  </div>
+
+
+  
+  <div class="form-group">
+    <label for="mensaje">Cuentanos que le pasa a tu aparato:</label>
+    <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+  </div>
+ 
+  <button type="submit" class="btn btn-primary" name="submit">Dar Aviso</button>
+</form><br>
+
+</div>
+
+
+</div>
+
+<!--fin pagina 2-->
 
 
       <!-- FOOTER -->
@@ -394,6 +447,14 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-3.1.1.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
+    <script type="text/javascript">
+    	//$("#bt1").addClass("ocultada");
+
+    	$("#bt1").click(function() {
+    		$(".cambiopagina").addClass("ocultada");
+    		$("#nuevapagina").removeClass("ocultada");
+    	});
+    </script>
     <script src="/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
