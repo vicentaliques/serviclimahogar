@@ -35,6 +35,16 @@ body {
         margin-bottom: 50px;
       }
 
+      .ocultada
+      {
+        display: none;
+      }
+
+      .mostrada
+      {
+        display: inherit;
+      }
+
 
 /* Carousel base class */
 .carousel {
