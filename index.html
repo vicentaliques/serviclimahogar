@@ -352,7 +352,7 @@
 
 <div class="container">
   
-<h1>Gracias por Contactar </h1><h1 id="nombreFormCliente"></h1><br>
+<h1 id="nombreFormCliente"></h1><br>
 <h4 id="descripcionEquipo"></h4>
 
 
@@ -361,7 +361,7 @@
 
 
 <!--Formulario -->
-<div class="container">
+<div class="container" id="formularioHoja2">
 
 <form action="contacto.php" id="form1" name="form1" method="post">
   <div id="close_form"></div>
@@ -450,34 +450,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery-3.1.1.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
-    <script type="text/javascript">
-    	//$("#bt1").addClass("ocultada");
-
-    	$("#bt1").click(function() {
-    		
-
-				var lista1 = document.getElementById("exampleSelect1");
-				var indiceSeleccionado1 = lista1.selectedIndex;
-				var opcionSeleccionada1 = lista1.options[indiceSeleccionado1];
-				var textoSeleccionado1 = opcionSeleccionada1.text;
-				
-				var lista2 = document.getElementById("exampleSelect2");
-				var indiceSeleccionado2 = lista2.selectedIndex;
-				var opcionSeleccionada2 = lista2.options[indiceSeleccionado2];
-				var textoSeleccionado2 = opcionSeleccionada2.text;
-
-				var nombreClient = document.getElementById("nombreCliente").value;
-				
-
-				document.getElementById("nombreFormCliente").innerHTML = nombreClient;
-				document.getElementById("descripcionEquipo").innerHTML = "Por favor cumplimenta los campos que quedan para que podamos ayudarte en tu " + textoSeleccionado1 + " de la marca " + textoSeleccionado2;
-				
-				$(".cambiopagina").addClass("ocultada");
-    			$("#nuevapagina").removeClass("ocultada");
-				
-
-    	});
-    </script>
+    <script type="text/javascript" src=js/main.js></script>
     <script src="/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
