@@ -17,7 +17,7 @@
 				document.getElementById("nombreFormCliente").innerHTML = "Gracias por Contactar " + nombreClient;
 				document.getElementById("descripcionEquipo").innerHTML = "Por favor cumplimenta los campos que quedan para que podamos ayudarte en tu " + textoSeleccionado1 + " de la marca " + textoSeleccionado2;
 				
-
+				//alert(textoSeleccionado1);
     			$("#nuevapagina").removeClass("ocultada");
 				
 
