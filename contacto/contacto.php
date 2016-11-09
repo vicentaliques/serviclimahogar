@@ -8,6 +8,7 @@
 	$mailheader .= "Content-type: text/html;charset=utf-8\r\n";
 
 	$mensaje = "Modelo: " .$_POST["modelo"]."\n";
+	
 	$mensaje .= "\n<br>Email: " .$_POST["email1"]."\n";
 	$mensaje .= "\n<br>Mensaje: " .nl2br($_POST["mensaje"])."\n";
 
