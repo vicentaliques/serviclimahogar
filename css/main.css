@@ -35,6 +35,25 @@ body {
         margin-bottom: 50px;
       }
 
+      #formularioHoja2
+      {
+        margin-top: 5%;
+      }
+
+      .ocultada
+      {
+        display: none;
+      }
+
+      .ocultada2
+      {
+        display: none;
+      }
+
+
+
+
+
 
 /* Carousel base class */
 .carousel {

@@ -10,12 +10,13 @@
     <link rel="icon" href="img/favicon.ico">
 
     <title>Serviclima Hogar</title>
-
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/main.css" rel="stylesheet">
+
+
   </head>
   <body>
 
@@ -24,7 +25,7 @@
       <!--<nav class="navbar navbar-light bg-faded">-->
       <nav class="navbar navbar-light" style="background-color: #FFF;">
         <a class="navbar-brand" href="#">
-            <img src="img/serviclima logo hogar2.png" alt="">
+            <img src="img/serviclima logo hogar2.png" alt="Serviclima Hogar reparación de electrodomésticos">
         </a>
         <p class="navbar-brand" id="nTelefono">96 227 07 87</p>
 
@@ -33,12 +34,12 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-          	<a class="nav-link" href="http://www.arttilugios.es/serviclimahogar/contacto/contacto.html">Aviso</a>
+          	<a class="nav-link" id="accesoContacto" href="#nuevapagina">Aviso</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Blog</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" >
             <a class="nav-link" href="#">Nosotros</a>
           </li>
 
@@ -48,8 +49,8 @@
 
 <!--Formulario inline-->
 
-<div class="container" style="border: hidden;">
-<form class="form-control">
+<div class="container" >
+<form class="form-control" style="border: hidden">
 
 <div class="row">
 
@@ -70,6 +71,9 @@
           </select>
   </div>
 </div>
+
+
+
 
 <div class="col-lg-3">
     <div class="form-group">
@@ -92,13 +96,14 @@
 
 <div class="col-lg-3">
    <div class="form-group">
-          <label class="sr-only" for="example-text-input">Nombre</label>
-          <input class="form-control form-control-lg" type="text" placeholder="Escribe tu Nombre" id="example-text-input">
+          <label class="sr-only" for="nombreCliente">Nombre</label>
+          <input class="form-control form-control-lg" type="text" placeholder="Escribe tu Nombre" id="nombreCliente">
    </div>
 </div>
 
-<div class="col-lg-3" >
-  <button type="submit" class="btn btn-warning" style="text-align: center">Dar Aviso</button>
+<div class="col-lg-3 boton1"  >
+  <a  href="#nuevapagina" class="btn btn-warning"  id="bt1">Dar Aviso</a>
+ 
 </div>
 
 </div>
@@ -160,52 +165,47 @@
 
 <!--LOGOTIPOS-->
 
-<div class="container p-y">
+<!--<div class="container p-y">
 
-<div class="container-fluid">
-
-
-<div class="block app-ribbon p-y-lg">
-  <div class="row">
-  <div class="col-lg-1"></div>
-  <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoME150.png" title="Serviclima Servicio Técnico Oficial"></a></div>
-  <div class="col-lg-1"></div>
-    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoMHI150.png" title="Serviclima Servicio Técnico Oficial"></a></div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoindesit150.png" title="Serviclima Servicio Técnico Oficial"></a></div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logowhirlpool150.png" title="Serviclima Servicio Técnico Oficial"></a></div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoteka150.png" title="Serviclima Servicio Técnico Oficial"></a></div>
-    <div class="col-lg-1"></div>
-</div>
-</div>
-
-<div class="container-fluid">
+<div class="container-fluid">-->
 
 
 <div class="block app-ribbon p-y-lg">
   <div class="row">
-  <div class="col-lg-1"></div>
-  <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoME150.png"></a></div>
-  <div class="col-lg-1"></div>
-    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoMHI150.png"></a></div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoindesit150.png"></a></div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logobalay150.png" title="Serviclima Servicio Técnico "></a></div>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logodaikin150.jpg"></a></div>
-  <div class="col-lg-1"></div>
-    
+    <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoCarrier100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoKaysun100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoToshiba100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoMHI100.png" title="Serviclima Servicio Técnico Oficial"></a></div>
+        <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoHitecsa100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoCiat100.png" title="Serviclima Servicio Técnico Oficial"></a></div>
+        <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoME100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoDaikin100.png" title="Serviclima Servicio Técnico Oficial"></a></div>
+        <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoFujitsu100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoGeneral100.png" title="Serviclima Servicio Técnico Oficial"></a></div>
+        <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoHisense100.png" title="Serviclima Servicio Técnico Oficial"></a></div>
+    <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoLG100.png" title="Serviclima Servicio Técnico"></a></div>
+  </div>
 </div>
+<br>
+
+<div class="block app-ribbon p-y-lg">
+  <div class="row">
+    <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoAriston100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoHotpoint100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoIgnis100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoWhirlpool100.png" title="Serviclima Servicio Técnico Oficial"></a></div>
+        <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoIndesit100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoTeka100.png" title="Serviclima Servicio Técnico Oficial"></a></div>
+        <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoNeff100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoBosch100.png" title="Serviclima Servicio Técnico Oficial"></a></div>
+        <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoKrups100.png" title="Serviclima Servicio Técnico"></a></div>
+        <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoElectrolux100.png" title="Serviclima Servicio Técnico Oficial"></a></div>
+        <div class="col-lg-1"><a href="#"><img class="rounded mx-auto d-block" src="img/logoBalay100.png" title="Serviclima Servicio Técnico Oficial"></a></div>
+    <div class="col-lg-1"><a href="#ME"><img class="rounded mx-auto d-block" src="img/logoBauknecht100.png" title="Serviclima Servicio Técnico"></a></div>
+  </div>
 </div>
 
-</div>
 
-</div>
-
-</div>
 
 
 
@@ -294,10 +294,10 @@
 	        <div class="col-md-7">
 	          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
 	          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-				<style type="text/css">#creditfooter{display:none} .feedburnerFeedBlock ul{ list-style: none }</style>
+				<!--<style type="text/css">#creditfooter{display:none} .feedburnerFeedBlock ul{ list-style: none }</style>
 
 
-				<script src="http://feeds.feedburner.com/arttilugios/tXQx?format=sigpro" type="text/javascript" ></script><noscript><p>Suscribirse a las actualizaciones de titulares RSS de: <a href="http://feeds.feedburner.com/arttilugios/tXQx"></a><br/>Ofrecido por FeedBurner</p> </noscript>
+				<script src="http://feeds.feedburner.com/arttilugios/tXQx?format=sigpro" type="text/javascript" ></script><noscript><p>Suscribirse a las actualizaciones de titulares RSS de: <a href="http://feeds.feedburner.com/arttilugios/tXQx"></a><br/>Ofrecido por FeedBurner</p> </noscript>-->
 
 
 
@@ -340,6 +340,109 @@
 
 
 
+
+<!--inicio página 2-->
+
+<div class="container ocultada" id="nuevapagina">
+
+
+<div class="container">
+  
+<h1 id="nombreFormCliente"></h1><br>
+<h4 id="descripcionEquipo"></h4>
+
+
+</div>
+
+
+
+<!--Formulario -->
+<div class="container" id="formularioHoja2">
+
+<form action="contacto/contacto.php" id="form1" name="form1" method="post">
+  <div id="close_form"></div>
+  
+  <div  class="ocultada2" id="formAccesoContacto">
+
+
+  <div class="form-group">
+    <label for="nombre1">Nombre:</label>
+    <input class="form-control" type="text" id="nombre1" name="nombre1" placeholder="Introduce tu nombre">
+  </div>
+  
+
+    <div class="form-group">
+             <label for="exampleSelect3">Tipo de Aparato</label>
+              <select class="form-control form-control" id="exampleSelect3" placeholder="Elige Aparato">
+                  <option>Tipo de Aparato</option>
+                  <option>Aire Acondicionado</option>
+                  <option>Lavadora</option>
+                  <option>Lavavajillas</option>
+                  <option>Microondas</option>
+                  <option>Horno</option>
+                  <option>Vitrocerámica</option>
+                  <option>Frigorífico</option>
+                  <option>Calentador</option>
+                  <option>Otro Electrodoméstico</option>
+              </select>
+      </div>
+
+
+
+
+    
+        <div class="form-group">
+            <label for="exampleSelect4">Marca</label>
+            <select class="form-control form-control" id="exampleSelect4" placeholder="Elige Marca">
+                  <option>Elige Marca</option>
+                  <option>Mitsubishi Electric</option>
+                  <option>Mitsubishi Heavy Industries</option>
+                  <option>Hisense</option>
+                  <option>Whirlpool</option>
+                  <option>LG</option>
+                  <option>Daikin</option>
+                  <option>Carrier</option>
+                  <option>Hitecsa</option>
+                  <option>Ciat</option>
+                  <option>Otra Marca</option>
+             </select>
+       </div>
+    
+
+
+    </div>
+
+
+  <div class="form-group">
+    <label for="nombre">Modelo:</label>
+    <input class="form-control" type="text" id="modelo" name="modelo" placeholder="Introduce el modelo (no es imprescindible)">
+  </div>
+
+
+
+  <div class="form-group">
+    <label for="email1">Dirección de email:</label>
+    <input type="email" class="form-control" id="email1" name="email1" aria-describedby="emailHelp" placeholder="Introduce tu email">
+    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu email</small>
+  </div>
+
+
+  
+  <div class="form-group">
+    <label for="mensaje">Cuentanos que le pasa a tu aparato:</label>
+    <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+  </div>
+ 
+  <button type="submit" class="btn btn-primary" name="submit">Dar Aviso</button>
+</form><br>
+
+</div>
+
+
+</div>
+
+
+<!--fin pagina 2-->
 
       <!-- FOOTER -->
 
@@ -392,9 +495,11 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-3.1.1.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
-    <script src="/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!--<script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>-->
+    <script type="text/javascript" src=js/main.js></script>
+    <script type="text/javascript" src=js/accesoContacto.js></script>
+    <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <!--<script src="js/holder.min.js"></script>-->
