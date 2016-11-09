@@ -8,6 +8,7 @@
 				
 				//alert(textoSeleccionado1);
     			$("#nuevapagina").removeClass("ocultada");
+    			$("#formAccesoContacto").removeClass("ocultada2");
 				
 
 });
