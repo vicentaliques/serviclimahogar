@@ -23,9 +23,27 @@
 
 });
 
- $("#botonModal").click(function() {
+$("#botonModal").click(function() {
  	/* Act on the event */
  	$('#myModal').modal('hide');
+ 	window.location.href = "contacto.html";
+ });
+
+ $("#botonModal2").click(function() {
+ 	/* Act on the event */
+ 	$('#myModal2').modal('hide');
+ 	window.location.href = "contacto.html";
+ });
+
+$("#botonModal3").click(function() {
+ 	/* Act on the event */
+ 	$('#myModal3').modal('hide');
+ 	window.location.href = "contacto.html";
+ });
+
+$("#botonModal4").click(function() {
+ 	/* Act on the event */
+ 	$('#myModal4').modal('hide');
  	window.location.href = "contacto.html";
  });
 
