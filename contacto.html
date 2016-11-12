@@ -79,18 +79,18 @@
   
 
     <div class="form-group">
-             <label for="exampleSelect3">Tipo de Aparato</label>
-              <select class="form-control form-control" id="exampleSelect3" placeholder="Elige Aparato">
-                  <option>Tipo de Aparato</option>
-                  <option>Aire Acondicionado</option>
-                  <option>Lavadora</option>
-                  <option>Lavavajillas</option>
-                  <option>Microondas</option>
-                  <option>Horno</option>
-                  <option>Vitrocerámica</option>
-                  <option>Frigorífico</option>
-                  <option>Calentador</option>
-                  <option>Otro Electrodoméstico</option>
+             <label for="tipoAparato">Tipo de Aparato</label>
+              <select class="form-control form-control" id="tipoAparato" placeholder="Elige Aparato" name="tipoAparato">
+                  <option value="1">Tipo de Aparato</option>
+                  <option value="Aire Acondicionado">Aire Acondicionado</option>
+                  <option value="Lavadora">Lavadora</option>
+                  <option value="Lavavajillas">Lavavajillas</option>
+                  <option value="Microondas">Microondas</option>
+                  <option value="Horno">Horno</option>
+                  <option value="Vitrocerámica">Vitrocerámica</option>
+                  <option value="Frigorífico">Frigorífico</option>
+                  <option value="Calentador">Calentador</option>
+                  <option value="Otro Electrodoméstico">Otro Electrodoméstico</option>
               </select>
       </div>
 
@@ -99,19 +99,19 @@
 
     
         <div class="form-group">
-            <label for="exampleSelect4">Marca</label>
-            <select class="form-control form-control" id="exampleSelect4" placeholder="Elige Marca">
-                  <option>Elige Marca</option>
-                  <option>Mitsubishi Electric</option>
-                  <option>Mitsubishi Heavy Industries</option>
-                  <option>Hisense</option>
-                  <option>Whirlpool</option>
-                  <option>LG</option>
-                  <option>Daikin</option>
-                  <option>Carrier</option>
-                  <option>Hitecsa</option>
-                  <option>Ciat</option>
-                  <option>Otra Marca</option>
+            <label for="tipoMarca">Marca</label>
+            <select class="form-control form-control" id="tipoMarca" name="tipoMarca" placeholder="Elige Marca">
+                  <option value="0">Elige Marca</option>
+                  <option value="Mitsubishi Electric">Mitsubishi Electric</option>
+                  <option value="Mitsubishi Heavy Industries">Mitsubishi Heavy Industries</option>
+                  <option value="Hisense">Hisense</option>
+                  <option value="Whirlpool">Whirlpool</option>
+                  <option value="">LG</option>
+                  <option value="LG">Daikin</option>
+                  <option value="Carrier">Carrier</option>
+                  <option value="Hitecsa">Hitecsa</option>
+                  <option value="Ciat">Ciat</option>
+                  <option value="">Otra Marca</option>
              </select>
        </div>
     
@@ -121,7 +121,7 @@
 
 
   <div class="form-group">
-    <label for="nombre">Modelo:</label>
+    <label for="modelo">Modelo:</label>
     <input class="form-control" type="text" id="modelo" name="modelo" placeholder="Introduce el modelo (no es imprescindible)">
   </div>
 
@@ -156,44 +156,47 @@
 
 
 
-<div class="block block-inverse app-footer" id="footer1" style="border: solid 1px">
+<div class="block block-inverse app-footer" id="footer1" style="border: solid 1px"  >
  <div class="container"  >
-    <div class="row">
-      <div class="col-sm-5 m-b-md">
-        <ul class="list-unstyled list-spaced">
-          <li class="m-b"><h6 class="text-uppercase">About</h6></li>
-          <li class="text">
-           We’ve been working on Go Analytics for the better part of a decade and are super proud of what we’ve created. If you’d like to learn more, or are interested in a job, contact us anytime at <a href="mailto: avisos@serviclima.es">avisos@serviclima.es</a>.
+    <div class="row" style="font-size: 0.75em">
+      <div class="col-sm-4 m-b-md">
+        <ul class="list-unstyled list-spaced" >
+          <li class="m-b"><h6 class="text-uppercase">PARA TI:</h6></li>
+          <li class="text"">
+           Estamos haciendo un gran esfuerzo para que contactar con nosotros sea más fácil, si quieres contactar con nosotros a través del correo electrónico por favor no lo dudes y escríbenos a esta dirección: <a href="mailto:atencioncliente@serviclima.es"><img src="img/correoserviclima.png" alt="correo electrónico serviclima" style="float: left"></a>
+
+
           </li>
         </ul>
       </div>
       <div class="col-sm-2 col-sm-offset-1 m-b-md">
         <ul class="list-unstyled list-spaced">
-          <li class="m-b"><h6 class="text-uppercase">Product</h6></li>
-          <li class="text">Features</li>
-          <li class="text">Examples</li>
-          <li class="text">Tour</li>
-          <li class="text">Gallery</li>
+          <li class="m-b"><h6 class="text-uppercase">Xàtiva:</h6></li>
+          <li class="text">C/ Braçal del roncador, 10</li>
+          <li class="text">Xàtiva (46800)</li>
+          <li class="text">Horario:</li>
+          <li class="text">de 9a-13:30p</li>
+          <li class="text">de 16p-19p</li>
+          <li class="text">962 27 07 87</li>
         </ul>
       </div>
-      <div class="col-sm-2 m-b-md">
+
+      <div class="col-sm-2 col-sm-offset-1 m-b-md">
         <ul class="list-unstyled list-spaced">
-          <li class="m-b"><h6 class="text-uppercase">Apis</h6></li>
-          <li class="text">Rich data</li>
-          <li class="text">Simple data</li>
-          <li class="text">Real time</li>
-          <li class="text">Social</li>
+          <li class="m-b"><h6 class="text-uppercase">Ontinyent:</h6></li>
+          <li class="text">Avda. Daniel Gil, 66</li>
+          <li class="text">Ontinyent (46870)</li>
+          <li class="text">Horario:</li>
+          <li class="text">de 9a-13:30p</li>
+          <li class="text">de 16p-19p</li>
+          <li class="text">962 386 354</li>
         </ul>
       </div>
-      <div class="col-sm-2 m-b-md">
-        <ul class="list-unstyled list-spaced">
-          <li class="m-b"><h6 class="text-uppercase">Legal</h6></li>
-          <li class="text">Terms</li>
-          <li class="text">Legal</li>
-          <li class="text">Privacy</li>
-          <li class="text">License</li>
-        </ul>
+
+      <div class="col-sm-3 m-b-md">
+        <p>Para cualquier aclaración sobre nuestra política de privacidad le rogamos se dirija al siguiente enlace, <a href="politicaprivacidad.html"  style="color: white; text-decoration: underline;">política de privacidad</a></p>
       </div>
+      
     </div>
   </div>
 </div>
@@ -206,7 +209,6 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <!--<script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>-->
     <script type="text/javascript" src=js/main.js></script>
-    <script type="text/javascript" src=js/accesoContacto.js></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
