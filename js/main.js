@@ -23,6 +23,13 @@
 
 });
 
+$("#AbrirBotonModal").click(function() {
+ 	/* Act on the event */
+ 	$('#myModal').modal('show');
+
+ });
+
+
 $("#botonModal").click(function() {
  	/* Act on the event */
  	$('#myModal').modal('hide');
