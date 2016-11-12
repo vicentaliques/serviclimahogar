@@ -22,3 +22,15 @@
 				
 
 });
+
+ $("#botonModal").click(function() {
+ 	/* Act on the event */
+ 	$('#myModal').modal('hide');
+ 	window.location.href = "contacto.html";
+ });
+
+ $("#accesoContacto").click(function() {
+ 	/* Act on the event */
+ 	window.location.href = "contacto.html";
+
+ });
