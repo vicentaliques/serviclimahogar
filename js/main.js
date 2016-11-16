@@ -1,17 +1,17 @@
  $("#bt1").click(function() {
     		
 
-				var lista1 = document.getElementById("exampleSelect1");
+				var lista1 = document.getElementById("tipoAparato");
 				var indiceSeleccionado1 = lista1.selectedIndex;
 				var opcionSeleccionada1 = lista1.options[indiceSeleccionado1];
 				var textoSeleccionado1 = opcionSeleccionada1.text;
 				
-				var lista2 = document.getElementById("exampleSelect2");
+				var lista2 = document.getElementById("tipoMarca");
 				var indiceSeleccionado2 = lista2.selectedIndex;
 				var opcionSeleccionada2 = lista2.options[indiceSeleccionado2];
 				var textoSeleccionado2 = opcionSeleccionada2.text;
 
-				var nombreClient = document.getElementById("nombreCliente").value;
+				var nombreClient = document.getElementById("nombre1").value;
 				
 
 				document.getElementById("nombreFormCliente").innerHTML = "Gracias por Contactar " + nombreClient;

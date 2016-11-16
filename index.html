@@ -61,18 +61,18 @@
 
 <div class="col-lg-3">
   <div class="form-group">
-         <label class="sr-only" for="exampleSelect1">Tipo de Aparato</label>
-          <select class="form-control" id="exampleSelect1" placeholder="Elige Aparato">
-              <option>Tipo de Aparato</option>
-              <option>Aire Acondicionado</option>
-              <option>Lavadora</option>
-              <option>Lavavajillas</option>
-              <option>Microondas</option>
-              <option>Horno</option>
-              <option>Vitrocerámica</option>
-              <option>Frigorífico</option>
-              <option>Calentador</option>
-              <option>Otro Electrodoméstico</option>
+         <label class="sr-only" for="tipoAparato">Tipo de Aparato</label>
+          <select class="form-control" id="tipoAparato" name="tipoAparato" placeholder="Elige Aparato">
+              <option value="0">Tipo de Aparato</option>
+              <option value="Aire Acondicionado">Aire Acondicionado</option>
+              <option value="Lavadora">Lavadora</option>
+              <option value="Lavavajillas">Lavavajillas</option>
+              <option value="Microondas">Microondas</option>
+              <option value="Horno">Horno</option>
+              <option value="Vitrocerámica">Vitrocerámica</option>
+              <option value="Frigorífico">Frigorífico</option>
+              <option value="Calentador">Calentador</option>
+              <option value="Otro Electrodoméstico">Otro Electrodoméstico</option>
           </select>
   </div>
 </div>
@@ -82,27 +82,31 @@
 
 <div class="col-lg-3">
     <div class="form-group">
-        <label class="sr-only" for="exampleSelect2">Marca</label>
-        <select class="form-control" id="exampleSelect2" placeholder="Elige Marca">
-              <option>Elige Marca</option>
-              <option>Mitsubishi Electric</option>
-              <option>Mitsubishi Heavy Industries</option>
-              <option>Hisense</option>
-              <option>Whirlpool</option>
-              <option>LG</option>
-              <option>Daikin</option>
-              <option>Carrier</option>
-              <option>Hitecsa</option>
-              <option>Ciat</option>
-              <option>Otra Marca</option>
+        <label class="sr-only" for="tipoMarca">Marca</label>
+        <select class="form-control" id="tipoMarca" name="tipoMarca" placeholder="Elige Marca">
+              <option value="0">Elige Marca</option>
+              <option value="Mitsubishi Electric">Mitsubishi Electric</option>
+              <option value="Mitsubishi Heavy Industries">Mitsubishi Heavy Industries</option>
+              <option value="Hisense">Hisense</option>
+              <option value="Whirlpool">Whirlpool</option>
+              <option value="LG">LG</option>
+              <option value="Daikin">Daikin</option>
+              <option value="Teka">Teka</option>
+              <option value="Balay">Balay</option>
+              <option value="Bosch">Bosch</option>
+              <option value="Indesit">Indesit</option>
+              <option value="Bauknecht">Bauknecht</option>
+              <option value="Hitecsa">Hitecsa</option>
+              <option value="Ciat">Ciat</option>
+              <option value="Otra Marca">Otra Marca</option>
          </select>
    </div>
 </div>
 
 <div class="col-lg-3">
    <div class="form-group">
-          <label class="sr-only" for="nombreCliente">Nombre</label>
-          <input class="form-control " type="text" placeholder="Escribe tu Nombre" id="nombreCliente">
+          <label class="sr-only" for="nombre1">Nombre</label>
+          <input class="form-control " type="text" placeholder="Escribe tu Nombre" id="nombre1" name="nombre1">
    </div>
 </div>
 
@@ -262,7 +266,7 @@
     <!-- Three columns of text below the carousel -->
   <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="img/assets/tiempo.png" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="img/tiempo.png" alt="Generic placeholder image" width="140" height="140">
 		  <h2>Asistencia Rápida</h2>
 		  <p>Cuando tu lavadora, horno, frigorífico, congelador, aire acondicionado u otro electrodomésticos <strong>deja de funcionar</strong>, quieres una <strong>rápida respuesta</strong> desde <strong>serviClima Hogar</strong>, tu servicio de asistencia técnica, y eso lo sabemos…<br></p>
 	      
@@ -301,7 +305,7 @@
 
 
     <div class="col-lg-4">
-          <img class="img-circle" src="img/assets/presupuesto.png" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="img/presupuesto.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Presupuesto Previo</h2>
           <p>Siempre sabrás que has de pagar antes de <strong>reparar tu electrodoméstico</strong>, puedes ver nuestra <strong>tarifa de precios</strong>, donde podrás comprobar cuales son los costes de <strong>nuestros servicios</strong>, además…
           <br><br></p>
@@ -342,7 +346,7 @@
 
 
     <div class="col-lg-4">
-          <img class="img-circle" src="img/assets/sinpapel.png" alt="Generic placeholder image" width="140" height="140">
+          <img class="img-circle" src="img/sinpapel.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Aplicación Informática</h2>
                 <p>Con la última <strong>actualización</strong> de nuestros <strong>sistema informático</strong> que utilizamos en <strong>serviClima Hogar</strong>, se ha dotado a nuestros técnicos de las herramientas necesarias para que, a la vez que hemos conseguido eliminar…
                 <br></p>
@@ -403,7 +407,7 @@
             <p class="lead">Entra en nuestro blog y podrás seguir todos los consejos que te podemos aportar en el cuidado de tus equipos electrodomésticos y de aire acondicionado.
             </p>
             <div class="container">
-            <a href="http://www.serviclima.es/blog" id="entrarBlog"><button type="button" class="btn btn-secondary" style="color: orange">Ir a Blog</button></a>
+            <a href="http://www.serviclima.es/blog" id="entrarBlog" target="_blank"><button type="button" class="btn btn-secondary" style="color: orange">Ir a Blog</button></a>
             </div>
 
             
@@ -515,7 +519,7 @@
         <ul class="list-unstyled list-spaced" >
           <li class="m-b"><h6 class="text-uppercase">PARA TI:</h6></li>
           <li class="text"">
-           Estamos haciendo un gran esfuerzo para que contactar con nosotros sea más fácil, si quieres contactar con nosotros a través del correo electrónico por favor no lo dudes y escríbenos a esta dirección: <a href="mailto:atencioncliente@serviclima.es"><img src="img/correoserviclima.png" alt="correo electrónico serviclima" style="float: left"></a>
+           Estamos haciendo un gran esfuerzo para que contactar con nosotros sea más fácil, si quieres contactar con nosotros a través del correo electrónico por favor no lo dudes y escríbenos a esta dirección: <br><a href="mailto:atencioncliente@serviclima.es"   style="color: white; text-decoration: underline;">atencioncliente@serviclima.es</a>
 
 
           </li>
