@@ -1,17 +1,17 @@
  $("#bt1").click(function() {
     		
 
-				var lista1 = document.getElementById("exampleSelect1");
+				var lista1 = document.getElementById("tipoAparato");
 				var indiceSeleccionado1 = lista1.selectedIndex;
 				var opcionSeleccionada1 = lista1.options[indiceSeleccionado1];
 				var textoSeleccionado1 = opcionSeleccionada1.text;
 				
-				var lista2 = document.getElementById("exampleSelect2");
+				var lista2 = document.getElementById("tipoMarca");
 				var indiceSeleccionado2 = lista2.selectedIndex;
 				var opcionSeleccionada2 = lista2.options[indiceSeleccionado2];
 				var textoSeleccionado2 = opcionSeleccionada2.text;
 
-				var nombreClient = document.getElementById("nombreCliente").value;
+				var nombreClient = document.getElementById("nombre1").value;
 				
 
 				document.getElementById("nombreFormCliente").innerHTML = "Gracias por Contactar " + nombreClient;
@@ -22,3 +22,40 @@
 				
 
 });
+
+$("#AbrirBotonModal").click(function() {
+ 	/* Act on the event */
+ 	$('#myModal').modal('show');
+
+ });
+
+
+$("#botonModal").click(function() {
+ 	/* Act on the event */
+ 	$('#myModal').modal('hide');
+ 	window.location.href = "contacto.html";
+ });
+
+ $("#botonModal2").click(function() {
+ 	/* Act on the event */
+ 	$('#myModal2').modal('hide');
+ 	window.location.href = "contacto.html";
+ });
+
+$("#botonModal3").click(function() {
+ 	/* Act on the event */
+ 	$('#myModal3').modal('hide');
+ 	window.location.href = "contacto.html";
+ });
+
+$("#botonModal4").click(function() {
+ 	/* Act on the event */
+ 	$('#myModal4').modal('hide');
+ 	window.location.href = "contacto.html";
+ });
+
+ $("#accesoContacto").click(function() {
+ 	/* Act on the event */
+ 	window.location.href = "contacto.html";
+
+ });
